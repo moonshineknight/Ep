@@ -4,6 +4,7 @@ import index from '@/scripts/components/index'
 import board from '@/scripts/components/board'
 import search from '@/scripts/components/search'
 import user from '@/scripts/components/user'
+import cart from '@/scripts/components/cart'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -18,6 +19,7 @@ export default new Router({
 
         {path:'board',component:board},
         {path:'search',component:search},
+        {path:'cart',component:search},
         {path:'user',component:user}
       ]
     }
