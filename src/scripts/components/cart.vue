@@ -1,6 +1,8 @@
 <template lang="html">
   <div>
-    gouwuche
+
+    什么啊！
+
   </div>
 </template>
 
