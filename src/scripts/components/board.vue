@@ -2,7 +2,7 @@
   <div class="m-board">
     <mt-swipe :auto="4000">
       <mt-swipe-item v-for="(item,index) in datasource " :key='index'>
-        <img :src="item.images.large" alt="">
+        <img :src="item.image" alt="">
       </mt-swipe-item>
     </mt-swipe>
   </div>
@@ -31,7 +31,9 @@ export default {
       url:'http://localhost:3000/swper',
       method:'get',
       callback:function(res){
-        that.datasource = that.datasource.concat(res.data.subjects)
+        console.log(res)
+        that.datasource = that.datasource.concat(res.data.datas[0].value)
+        console.log(that.datasource)
       }
 
     })
