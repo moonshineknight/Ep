@@ -1,8 +1,25 @@
 .m-board {
-  .mint-swipe {
-    height: 1.9rem;
-    img {
-      width: 100%;
+  .m-boardnav{
+      width:100%;
+      @include flexbox();
+
+      @include align-items(center);
+      height:0.6rem;
+      li{
+        width:18%;
+        text-align: center;
+      }
+  },
+  .board-main{
+
+    .border-index1{
+      .mint-swipe {
+        height: 1.6rem;
+        img {
+          width: 100%;
+        }
+      }
     }
+
   }
 }

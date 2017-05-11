@@ -1,9 +1,5 @@
 <template>
   <div class="m-index">
-    <header class="yo-header yo-header-a">
-      <h2 class="title">榜单*电影*</h2>
-      <span class="regret yo-ico">&#xf0013</span>
-    </header>
 
     <section class="main">
       <router-view></router-view>

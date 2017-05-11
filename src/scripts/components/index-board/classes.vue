@@ -1,14 +1,13 @@
 <template lang="html">
-  <div>
-search
+  <div class="">
+    4
   </div>
 </template>
 
 <script>
 export default {
-
 }
 </script>
 
-<style lang="scss">
+<style lang="css">
 </style>

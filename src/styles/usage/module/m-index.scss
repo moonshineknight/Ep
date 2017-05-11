@@ -1,18 +1,16 @@
-@import "../fragment/yo-header";
+@import "../fragment/yo-search.scss";
 
-@include yo-header(
-  $name: a,
-  $bgcolor: #35495e,
-  $item-ico-color: #fff,
-  $border-width: 0,
-  $color: #fff,
-  $font-size: .12rem
-){
-  .regret {
-    left: auto;
-    right: 0;
-  }
-}
+// @include yo-search(
+//   $name: a,
+//   $bgcolor: #fff,
+//   $color: #000,
+//   $font-size: .12rem
+// ){
+//   .regret {
+//     left: auto;
+//     right: 0;
+//   }
+// }
 
 .m-index {
   height: 100%;
