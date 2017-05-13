@@ -1,0 +1,75 @@
+
+  .m-board{
+    overflow: hidden;
+
+    .m-boardnav{
+        width:100%;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(space-around);
+        height:0.5rem;
+        li{
+          width:18%;
+          text-align: center;
+        }
+    }
+
+    .board-main{
+
+      .dogfood{
+        background: red;
+        height:5.63rem;
+          overflow-y: scroll;
+
+        width:100%;
+
+
+        .mint-swipe {
+          height: 1.6rem;
+          img {
+            width: 100%;
+          }
+        }
+        ul{
+          text-align: center;
+          line-height: 0.93rem;
+          height:0.93rem;
+          width: 100%;
+          background: white;
+          @include flexbox();
+          li{
+            width:25%;
+            height:100%;
+          }
+        }
+        .ppte{
+          h5{
+            width:100%;
+            line-height:.39rem;
+            height:.39rem;
+            text-align: center;
+          }
+          img{
+            width:100%;
+            height:1.57rem;
+          }
+        }
+        .ul2{
+          text-align: center;
+          line-height: .4rem;
+          height:.4rem;
+          width: 100%;
+          background:blue;
+         @include flexbox();
+        //  border-bottom: 1px solid #111;
+          li{
+            width:25%;
+            height:100%;
+            font-size: .2rem;
+          }
+        }
+
+      }
+
+    }
+  }

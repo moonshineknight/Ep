@@ -17,11 +17,13 @@
   @include flexbox();
   @include flex-direction(column);
 
-  section {
+  section{
     @include flex(1);
     width: 100%;
     background: gray;
+    overflow-y: hidden;
   }
+
 
   nav {
     height: .5rem;
