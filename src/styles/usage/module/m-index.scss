@@ -1,26 +1,13 @@
-@import "../fragment/yo-search.scss";
-
-// @include yo-search(
-//   $name: a,
-//   $bgcolor: #fff,
-//   $color: #000,
-//   $font-size: .12rem
-// ){
-//   .regret {
-//     left: auto;
-//     right: 0;
-//   }
-// }
 
 .m-index {
   height: 100%;
   @include flexbox();
   @include flex-direction(column);
-
-  section {
+  > section {
     @include flex(1);
     width: 100%;
-    background: gray;
+    background: #eee;
+    overflow-y:hidden;
   }
 
   nav {

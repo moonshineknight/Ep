@@ -1,25 +1,150 @@
+@import "../fragment/yo-search.scss";
+@include yo-search(
+  $name: a,
+  $bgcolor: #fff,
+  $input-bgcolor:#e9eaec,
+  $font-size: .12rem
+){
+  .regret {
+    left: auto;
+    right: 0;
+  }
+}
 .m-board {
+> form{
+  label{
+    margin:0 0.2rem;
+  }
+}
   .m-boardnav{
       width:100%;
       @include flexbox();
-
+      background: #fff;
       @include align-items(center);
-      height:0.6rem;
+      height:0.5rem;
       li{
         width:18%;
         text-align: center;
+        color:#373636;
       }
-  },
+      &.active{
+          color: red;
+          border-bottm:1px solid red;
+        }
+  }
   .board-main{
-
+    height:5.23rem;
+    overflow-y: scroll;
     .border-index1{
-      .mint-swipe {
+      overflow:scroll;
+     .mint-swipe {
         height: 1.6rem;
         img {
           width: 100%;
         }
       }
+      .baokuan{
+        height:2.1rem;
+        width:100%;
+        background: #fff;
+        margin-bottom:0.12rem;
+        img{
+          height:1.25rem;
+          width:100%;
+        }
+        ul{
+          height:0.85rem;
+          width:100%;
+          @include flexbox();
+          li{
+              height:100%;
+              width:25%;
+              @include flexbox();
+              @include flex-direction(column);
+              @include justify-content(center);
+              @include align-items(center);
+            img{
+              width:0.4rem;
+              height:0.4rem
+            }
+          }
+        }
+      }
+      .index1_purchase {
+        padding:.1rem;
+        margin: .2rem 0;
+        background: #fff;
+        height: 2.14rem;
+        h1 {
+          width:100%;
+          line-height: .12rem;
+          margin-bottom: .05rem;
+          @include flexbox();
+          span {
+            width: .1rem;
+            font-size: .12rem;
+            @include transform(scale(0.8));
+            //color: #999;
+          }
+          b{
+            @include flex();
+            font-weight: normal;
+          }
+        }
+        > ul {
+          @include flexbox();
+          overflow-x: scroll;
+          li {
+            @include flexbox();
+            @include flex-direction(column);
+            margin: .05rem;
+            img {
+              width: 100%;
+              height: 1.25rem;
+            }
+            b {
+              font-weight: normal;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .index1_hot{
+        margin: .2rem 0;
+        height:1.97rem;
+        @include flexbox();
+        @include flex-direction(column);
+        > div:nth-of-type(1){
+          height:0.35rem;
+          img{
+            height:100%;
+            width:100%
+          }
+        }
+        div:nth-of-type(2){
+          height:1.62rem;
+          @include flexbox();
+          div:nth-of-type(1){
+            width:1.36rem;
+            height:100%;
+            img{
+              height:100%;
+              width:100%;
+            }
+          }
+          div:nth-of-type(2){
+            width:2.39rem;
+            height:100%;
+            @include flexbox();
+            @include flex-direction(column);
+            height:100%;
+            img{
+              height:50%;
+              width:100%;
+            }
+          }
+        }
+      }
     }
-
   }
 }

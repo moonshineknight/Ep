@@ -13,7 +13,6 @@ import Classes from '@/scripts/components/index-board/classes'
 import Experts from '@/scripts/components/index-board/experts'
 
 
-
 Vue.use(Router)
 export default new Router({
   routes: [
