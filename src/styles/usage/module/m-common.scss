@@ -3,3 +3,7 @@
   src: url('/static/iconfont/iconfont.woff') format('woff'),
   url('/static/iconfont/iconfont.ttf') format('truetype')
 }
+html,div,p,span,form,legend,fieldset,h1,h2,h3,h4,h5,h6,hr,ul,li,ol,dl,dd,dt,nr{
+    margin:0;padding:0;
+    border:none;
+}

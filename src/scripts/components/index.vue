@@ -1,7 +1,7 @@
 <template>
   <div class="m-index">
 
-    <section class="main">
+    <section>
       <router-view></router-view>
     </section>
     <nav>

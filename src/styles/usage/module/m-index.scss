@@ -21,6 +21,7 @@
     @include flex(1);
     width: 100%;
     background: gray;
+    overflow:hidden;
   }
 
   nav {
